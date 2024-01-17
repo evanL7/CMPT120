@@ -1,0 +1,9 @@
+blue
+pink
+salmon
+violet
+purple
+orange
+magenta
+green
+black

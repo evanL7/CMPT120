@@ -25,7 +25,7 @@ def validate_user_input(acc_list,first_name,last_name,acc_num):
 # This function runs the program
 def main():
     try:
-        file = "charge_accounts.txt"
+        file = "charge_accounts.txt" # Note that string may need to be changed to include the full path of the text file
         accounts_book = change_accounts_to_list(file)
     except FileNotFoundError: # This line ensures that if the charge_accounts.txt file doesn't exist, the user is informed
         print('''File not found! Please ensure there exists a "charge_accounts.txt" text file within this file's directory.''')

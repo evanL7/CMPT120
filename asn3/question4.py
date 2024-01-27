@@ -6,7 +6,7 @@
 # This function changes the student's answers to a nested list so that the question number and the student's answer are paired together
 def change_stu_ans_to_list():
     student_answers = []
-    file = open("answers.txt","r")
+    file = open("answers.txt","r") # Note that string may need to be changed to include the full path of the text file
     count = 1 # This variable keeps count of the question number
     for choice in file:
         choice = choice.strip() # This line removes the end of line character and any potential spaces in front of the student's choice

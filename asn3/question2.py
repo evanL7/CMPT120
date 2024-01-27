@@ -32,3 +32,13 @@ def binary(st):
         index_count += 1
 
     return tot # Returns the base 10 representation of the binary string
+
+# Test cases and expected output
+print(binary("110")) # Expected output: 6
+print(binary("1010")) # Expected output: 10
+print(binary("101010")) # Expected output: 42
+print(binary("110011")) # Expected output: 51
+print(binary("1001001")) # Expected output: 73
+print(binary("11111111")) # Expected output: 255
+print(binary("1111111111")) # Expected output: 1023
+print(binary("1111111111111111")) # Expected output: 65535

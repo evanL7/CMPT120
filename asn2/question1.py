@@ -18,3 +18,10 @@ def sub(string,substring):
 
     #If the for loop is exited, we then know that the substring is not a part of the string and then return False.
     return False
+
+# Test cases and expected output
+print(sub("hello","hello")) # Expected output: True
+print(sub("hello","world")) # Expected output: False
+print(sub("hello","el")) # Expected output: True
+print(sub("hello","mello")) # Expected output: False
+print(sub("hello","lo")) # Expected output: True

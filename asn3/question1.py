@@ -38,3 +38,10 @@ def next_letter(ch):
 
         # This line returns the next letter.
         return letters_of_alphabet[index_location + 1].upper() # Upper method call here because the initial character was uppercase
+
+# Test cases and expected output
+print(encrypt("hello")) # Expected output: ifmmp
+print(encrypt("world")) # Expected output: xpsme
+print(encrypt("zyxwvutsrqponmlkjihgfedcba")) # Expected output: azyxwvutsrqponmlkjihgfedcb
+print(encrypt("ABCDEFGHIJKLMNOPQRSTUVWXYZ")) # Expected output: BCDEFGHIJKLMNOPQRSTUVWXYZA
+print(encrypt(123)) # Expected output: Please ensure that the string consists of only letters of the alphabet.

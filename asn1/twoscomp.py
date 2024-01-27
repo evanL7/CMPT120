@@ -11,6 +11,7 @@ zeroes = 0
 inverted = ""
 neg_twos = ""
 
+# Flips the bits
 while len(num) != len(inverted):
     if num[pos] == "0":
         inverted += "1"
@@ -18,6 +19,7 @@ while len(num) != len(inverted):
         inverted += "0"
     pos += 1
 
+# Adds one to the flipped bits
 while True:
     if inverted[neg] == "0":
         neg_twos = inverted[:neg] + "1" + ("0" * zeroes)
@@ -26,5 +28,4 @@ while True:
         neg -= 1
         zeroes += 1
 
-print(inverted)
-print(neg_twos)
+print("The two's complement of", num, "is", neg_twos)
